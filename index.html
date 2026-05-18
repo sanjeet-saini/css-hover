@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> hover effect</title>
+    <title>Hover Effect</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <h1>css only
-        </h1>
-        <h3><p>using hover and not hover</p></h3>
+        <section class="intro" aria-label="Page title">
+            <h1>css only</h1>      
+        <p>using hover and not hover</p>
+        </section>
         <div class="banner">
-            <div class="list">
-                <div class="item"><img src="https://i.pinimg.com/474x/62/4e/11/624e113e225ceb33366f596e9660e619.jpg" alt=""></div>
-                <div class="item"><img src="sukun-Photoroom.png" alt=""></div>
-                <div class="item"><img src="gojobody.png" alt=""></div>
-                <div class="item"><img src="gojo.png" alt=""></div>
-                <div class="item"><img src="geto.png" alt=""></div>
+            <div class="list" aria-label="Character gallery">
+                <button class="item" type="button" data-glow="#ff4d6d"><img src="sukun-Photoroom.png" alt="Sukuna character"></button>
+                <button class="item is-active" type="button" data-glow="#8be9fd"><img src="gojobody.png" alt="Gojo character full body"></button>
+                <button class="item" type="button" data-glow="#7c3aed"><img src="gojo.png" alt="Gojo character portrait"></button>
+                <button class="item" type="button" data-glow="#22c55e"><img src="geto.png" alt="Geto character"></button>
 
             </div>
         </div>
     </main>
+    <div class="cursor-light" aria-hidden="true"></div>
+    <script src="script.js"></script>
 </body>
 </html>
